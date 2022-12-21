@@ -76,7 +76,8 @@ $call-to-action-background-color: #3882f6;
   > #hero {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 2rem;
 
     > div:nth-of-type(1) {
       display: flex;
