@@ -10,7 +10,7 @@ $hero-main-font-size: 48px;
 $hero-main-font-weight: 900;
 $hero-secondary-color: #f9faf8;
 $hero-secondary-font-size: 18px;
-$button-color: #3882f6;
+$button-background-color: #6175f2;
 
 $information-header-color: #1f2937;
 $information-header-font-size: 36px;
@@ -29,13 +29,14 @@ $call-to-action-background-color: #3882f6;
 }
 
 .container {
-  min-width: 1280px;
+  width: 1280px;
 }
 
 #navigation-container {
   background-color: $dark-background-color;
   display: flex;
   justify-content: center;
+  padding: 0 0 2.5rem 0;
 
   > #navigation {
     > ul {
@@ -62,6 +63,61 @@ $call-to-action-background-color: #3882f6;
           text-decoration: none;
         }
       }
+    }
+  }
+}
+
+#hero-container {
+  background-color: $dark-background-color;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+
+  > #hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > div:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 0 0 40%;
+
+      > h1 {
+        line-height: 3rem;
+        margin: 0 0 0.5rem 0;
+        color: $hero-main-color;
+        font-size: $hero-main-font-size;
+        font-weight: $hero-main-font-weight;
+      }
+
+      > p {
+        margin: 0;
+        color: $hero-secondary-color;
+        font-size: $hero-secondary-font-size;
+        margin: 0 0 0.5rem 0;
+      }
+
+      > button {
+        background-color: $button-background-color;
+        color: $hero-secondary-color;
+        font-size: $hero-secondary-font-size;
+        border-color: $button-background-color;
+        padding: 0.25rem;
+        width: 10ch;
+        border-radius: 0.75rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    > div:nth-of-type(2) {
+      display: flex;
+      justify-content: flex-end;
+      flex: 0 0 40%;
     }
   }
 }

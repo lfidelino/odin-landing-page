@@ -3,13 +3,14 @@
 }
 
 .container {
-  min-width: 1280px;
+  width: 1280px;
 }
 
 #navigation-container {
   background-color: #1f2937;
   display: flex;
   justify-content: center;
+  padding: 0 0 2.5rem 0;
 }
 #navigation-container > #navigation > ul {
   align-items: center;
@@ -32,4 +33,52 @@
   color: #e5e7eb;
   font-size: 18px;
   text-decoration: none;
+}
+
+#hero-container {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+#hero-container > #hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#hero-container > #hero > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 40%;
+}
+#hero-container > #hero > div:nth-of-type(1) > h1 {
+  line-height: 3rem;
+  margin: 0 0 0.5rem 0;
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+#hero-container > #hero > div:nth-of-type(1) > p {
+  margin: 0;
+  color: #f9faf8;
+  font-size: 18px;
+  margin: 0 0 0.5rem 0;
+}
+#hero-container > #hero > div:nth-of-type(1) > button {
+  background-color: #6175f2;
+  color: #f9faf8;
+  font-size: 18px;
+  border-color: #6175f2;
+  padding: 0.25rem;
+  width: 10ch;
+  border-radius: 0.75rem;
+}
+#hero-container > #hero > div:nth-of-type(1) > button:hover {
+  cursor: pointer;
+}
+#hero-container > #hero > div:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0 40%;
 }/*# sourceMappingURL=index.css.map */
