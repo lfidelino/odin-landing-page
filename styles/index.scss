@@ -1,8 +1,67 @@
+$dark-background-color: #1f2937;
+$navigation-link-color: #e5e7eb;
+$navigation-link-font-size: 18px;
+$navigation-logo-color: #f9faf8;
+$navigation-logo-font-size: 24px;
+$navigation-logo-font-weight: 900;
+
+$hero-main-color: #f9faf8;
+$hero-main-font-size: 48px;
+$hero-main-font-weight: 900;
+$hero-secondary-color: #f9faf8;
+$hero-secondary-font-size: 18px;
+$button-color: #3882f6;
+
+$information-header-color: #1f2937;
+$information-header-font-size: 36px;
+$information-header-font-weight: 800;
+
+$quote-background-color: #e5e7eb;
+$quote-color: #1f2937;
+$quote-font-size: 36px;
+$quote-font-style: italic;
+$quote-font-weight: 300;
+
+$call-to-action-background-color: #3882f6;
+
 * {
   font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 
-  & ul {
-    margin: 0;
-    padding: 0;
+.container {
+  min-width: 1280px;
+}
+
+#navigation-container {
+  background-color: $dark-background-color;
+  display: flex;
+  justify-content: center;
+
+  > #navigation {
+    > ul {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      > li#logo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        > a {
+          color: $navigation-logo-color;
+          font-size: $navigation-logo-font-size;
+          font-weight: $navigation-logo-font-weight;
+        }
+      }
+      > li {
+        > a {
+          color: $navigation-link-color;
+          font-size: $navigation-link-font-size;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
