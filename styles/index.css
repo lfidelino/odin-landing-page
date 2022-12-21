@@ -98,6 +98,7 @@
   color: #1f2937;
   font-size: 36px;
   font-weight: 800;
+  text-align: center;
 }
 #information-container > #information > div {
   display: flex;
