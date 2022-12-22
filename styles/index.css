@@ -181,6 +181,9 @@
   border-radius: 0.5rem;
   padding: 0.25rem 1.5rem;
 }
+#call-to-action-container > #call-to-action > div > button:hover {
+  cursor: pointer;
+}
 
 #footer-container {
   background-color: #1f2937;

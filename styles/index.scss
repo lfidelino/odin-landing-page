@@ -230,6 +230,10 @@ $quote-font-weight: 300;
         color: $hero-main-color;
         border-radius: 0.5rem;
         padding: 0.25rem 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
