@@ -104,10 +104,11 @@
 #information-container > #information > div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 4rem;
 }
 #information-container > #information > div > div {
-  flex: 0 0 25%;
+  flex: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
