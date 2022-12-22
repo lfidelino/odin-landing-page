@@ -129,19 +129,24 @@
 }
 #quote-container > #quote {
   display: flex;
+  justify-content: center;
+}
+#quote-container > #quote > div {
+  width: 80%;
+  display: flex;
   flex-direction: column;
 }
-#quote-container > #quote > blockquote {
+#quote-container > #quote > div > blockquote {
   color: #1f2937;
   font-size: 36px;
   font-style: italic;
   font-weight: 300;
   margin: 0;
 }
-#quote-container > #quote > p {
+#quote-container > #quote > div > p {
   margin: 0;
   text-align: right;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 27px;
 }
 

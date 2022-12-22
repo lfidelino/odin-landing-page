@@ -172,21 +172,27 @@ $quote-font-weight: 300;
 
   > #quote {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 
-    > blockquote {
-      color: $quote-color;
-      font-size: $quote-font-size;
-      font-style: $quote-font-style;
-      font-weight: $quote-font-weight;
-      margin: 0;
-    }
+    > div {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
 
-    > p {
-      margin: 0;
-      text-align: right;
-      font-weight: 700;
-      font-size: calc($quote-font-size * 0.75);
+      > blockquote {
+        color: $quote-color;
+        font-size: $quote-font-size;
+        font-style: $quote-font-style;
+        font-weight: $quote-font-weight;
+        margin: 0;
+      }
+
+      > p {
+        margin: 0;
+        text-align: right;
+        font-weight: 500;
+        font-size: calc($quote-font-size * 0.75);
+      }
     }
   }
 }
