@@ -161,7 +161,7 @@
   align-items: center;
   background-color: #6175f2;
   border-radius: 0.5rem;
-  padding: 1rem 8rem;
+  padding: 3rem 6rem;
 }
 #call-to-action-container > #call-to-action > div {
   width: 100%;
@@ -179,5 +179,5 @@
   border: white 2px solid;
   color: white;
   border-radius: 0.5rem;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 1.5rem;
 }/*# sourceMappingURL=index.css.map */
