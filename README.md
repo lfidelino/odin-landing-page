@@ -19,3 +19,5 @@ What I've learned so far:
 - The box model
 - Flexbox
 - SCSS
+
+_Learn web development with [The Odin Project](https://www.theodinproject.com)._
