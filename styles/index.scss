@@ -138,6 +138,7 @@ $call-to-action-background-color: #3882f6;
       font-size: $information-header-font-size;
       font-weight: $information-header-font-weight;
       text-align: center;
+      margin-top: 0;
     }
 
     > div {
@@ -160,6 +161,33 @@ $call-to-action-background-color: #3882f6;
           text-align: center;
         }
       }
+    }
+  }
+}
+
+#quote-container {
+  background-color: $quote-background-color;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+
+  > #quote {
+    display: flex;
+    flex-direction: column;
+
+    > blockquote {
+      color: $quote-color;
+      font-size: $quote-font-size;
+      font-style: $quote-font-style;
+      font-weight: $quote-font-weight;
+      margin: 0;
+    }
+
+    > p {
+      margin: 0;
+      text-align: right;
+      font-weight: 700;
+      font-size: calc($quote-font-size * 0.75);
     }
   }
 }
