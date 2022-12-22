@@ -10,7 +10,7 @@ $hero-main-font-size: 48px;
 $hero-main-font-weight: 900;
 $hero-secondary-color: #f9faf8;
 $hero-secondary-font-size: 18px;
-$button-background-color: #6175f2;
+$button-background-color: #3882f6;
 
 $information-header-color: #1f2937;
 $information-header-font-size: 36px;
@@ -220,17 +220,34 @@ $quote-font-weight: 300;
         > h3,
         > p {
           margin: 0;
-          color: white;
+          color: $hero-main-color;
         }
       }
 
       > button {
         background-color: $button-background-color;
-        border: white 2px solid;
-        color: white;
+        border: $hero-main-color 2px solid;
+        color: $hero-main-color;
         border-radius: 0.5rem;
         padding: 0.25rem 1.5rem;
       }
+    }
+  }
+}
+
+#footer-container {
+  background-color: $dark-background-color;
+  color: $hero-main-color;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+
+  > #footer {
+    display: flex;
+    justify-content: center;
+
+    > p {
+      margin: 0;
     }
   }
 }
